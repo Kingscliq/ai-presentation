@@ -1,6 +1,15 @@
-"use client";
+'use client';
 
-import { Boxes, Brain, ChevronLeft, ChevronRight, Code, Search, Settings, Zap } from 'lucide-react';
+import {
+  Boxes,
+  Brain,
+  ChevronLeft,
+  ChevronRight,
+  Code,
+  Search,
+  Settings,
+  Zap,
+} from 'lucide-react';
 import React, { useState } from 'react';
 
 const Presentation = () => {
@@ -8,12 +17,14 @@ const Presentation = () => {
 
   const slides = [
     {
-      title: "The Evolution of Software Engineering",
-      subtitle: "From Copy-Paste to AI-Powered Development",
+      title: 'Supercharging your developer workflow with AI',
+      subtitle: 'From Copy-Paste to AI-Powered Development',
       icon: Brain,
       content: (
         <div className="text-center space-y-6">
-          <p className="text-2xl text-gray-300">A journey through how we build software</p>
+          <p className="text-2xl text-gray-300">
+            A journey through how we build software
+          </p>
           <div className="flex justify-center gap-8 mt-12">
             <div className="text-4xl">📚</div>
             <div className="text-4xl">→</div>
@@ -22,16 +33,18 @@ const Presentation = () => {
             <div className="text-4xl">🤖</div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "The Old Way: The Copy-Paste Era",
-      subtitle: "2008-2020",
+      title: 'The Old Way: The Copy-Paste Era',
+      subtitle: '2008-2020',
       icon: Search,
       content: (
         <div className="space-y-6">
           <div className="bg-gray-800 p-6 rounded-lg">
-            <h3 className="text-xl font-bold text-blue-400 mb-4">The Skills That Mattered:</h3>
+            <h3 className="text-xl font-bold text-blue-400 mb-4">
+              The Skills That Mattered:
+            </h3>
             <ul className="space-y-3 text-lg">
               <li className="flex items-start gap-3">
                 <span className="text-green-400 mt-1">✓</span>
@@ -56,44 +69,63 @@ const Presentation = () => {
             </ul>
           </div>
           <div className="text-center text-gray-400 italic mt-6">
-            "I spent 3 hours finding the right regex pattern on StackOverflow..."
+            "I spent 3 hours finding the right regex pattern on
+            StackOverflow..."
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "The Problem with Copy-Paste Engineering",
-      subtitle: "What we got wrong",
+      title: 'The Problem with Copy-Paste Engineering',
+      subtitle: 'What we got wrong',
       icon: Code,
       content: (
         <div className="space-y-6">
           <div className="grid grid-cols-2 gap-6">
             <div className="bg-red-900/30 border border-red-500 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-red-400 mb-4">❌ Not Scalable</h3>
-              <p className="text-gray-300">Each new problem required starting from scratch</p>
+              <h3 className="text-xl font-bold text-red-400 mb-4">
+                ❌ Not Scalable
+              </h3>
+              <p className="text-gray-300">
+                Each new problem required starting from scratch
+              </p>
             </div>
             <div className="bg-red-900/30 border border-red-500 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-red-400 mb-4">❌ Not Systematic</h3>
-              <p className="text-gray-300">No consistent approach to problem-solving</p>
+              <h3 className="text-xl font-bold text-red-400 mb-4">
+                ❌ Not Systematic
+              </h3>
+              <p className="text-gray-300">
+                No consistent approach to problem-solving
+              </p>
             </div>
             <div className="bg-red-900/30 border border-red-500 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-red-400 mb-4">❌ Context Switching</h3>
-              <p className="text-gray-300">Constantly leaving your IDE to search</p>
+              <h3 className="text-xl font-bold text-red-400 mb-4">
+                ❌ Context Switching
+              </h3>
+              <p className="text-gray-300">
+                Constantly leaving your IDE to search
+              </p>
             </div>
             <div className="bg-red-900/30 border border-red-500 p-6 rounded-lg">
-              <h3 className="text-xl font-bold text-red-400 mb-4">❌ Cargo Cult Programming</h3>
-              <p className="text-gray-300">Using code without understanding it</p>
+              <h3 className="text-xl font-bold text-red-400 mb-4">
+                ❌ Cargo Cult Programming
+              </h3>
+              <p className="text-gray-300">
+                Using code without understanding it
+              </p>
             </div>
           </div>
           <div className="text-center mt-8 p-4 bg-gray-800 rounded-lg">
-            <p className="text-xl text-yellow-400 font-semibold">We confused memorization with engineering</p>
+            <p className="text-xl text-yellow-400 font-semibold">
+              We confused memorization with engineering
+            </p>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "The Realization",
-      subtitle: "What Software Engineering Really Is",
+      title: 'The Realization',
+      subtitle: 'What Software Engineering Really Is',
       icon: Brain,
       content: (
         <div className="space-y-8">
@@ -105,7 +137,7 @@ const Presentation = () => {
               It's about systematic problem-solving
             </p>
           </div>
-          
+
           <div className="grid grid-cols-3 gap-4 mt-8">
             <div className="bg-gray-800 p-6 rounded-lg text-center">
               <div className="text-4xl mb-3">🎯</div>
@@ -128,16 +160,18 @@ const Presentation = () => {
             "The best engineers think in systems and processes, not in syntax"
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Enter AI: A New Paradigm",
-      subtitle: "From GPT to Production",
+      title: 'Enter AI: A New Paradigm',
+      subtitle: 'From GPT to Production',
       icon: Zap,
       content: (
         <div className="space-y-6">
           <div className="bg-gradient-to-br from-green-900/30 to-blue-900/30 p-6 rounded-lg border border-green-500">
-            <h3 className="text-2xl font-bold text-green-400 mb-4">AI Enables True Engineering</h3>
+            <h3 className="text-2xl font-bold text-green-400 mb-4">
+              AI Enables True Engineering
+            </h3>
             <p className="text-lg text-gray-200">
               AI handles the syntax, you focus on the problem-solving
             </p>
@@ -147,51 +181,67 @@ const Presentation = () => {
             <div className="flex items-start gap-4 bg-gray-800 p-4 rounded-lg">
               <div className="text-3xl">💭</div>
               <div>
-                <h4 className="font-bold text-blue-400 text-lg">Think in Concepts</h4>
-                <p className="text-gray-300">Describe what you want to achieve, not how</p>
+                <h4 className="font-bold text-blue-400 text-lg">
+                  Think in Concepts
+                </h4>
+                <p className="text-gray-300">
+                  Describe what you want to achieve, not how
+                </p>
               </div>
             </div>
-            
+
             <div className="flex items-start gap-4 bg-gray-800 p-4 rounded-lg">
               <div className="text-3xl">⚡</div>
               <div>
-                <h4 className="font-bold text-blue-400 text-lg">Rapid Iteration</h4>
-                <p className="text-gray-300">Test ideas in seconds, not hours</p>
+                <h4 className="font-bold text-blue-400 text-lg">
+                  Rapid Iteration
+                </h4>
+                <p className="text-gray-300">
+                  Test ideas in seconds, not hours
+                </p>
               </div>
             </div>
-            
+
             <div className="flex items-start gap-4 bg-gray-800 p-4 rounded-lg">
               <div className="text-3xl">📈</div>
               <div>
-                <h4 className="font-bold text-blue-400 text-lg">Scalable Approach</h4>
-                <p className="text-gray-300">Systematic patterns that work across problems</p>
+                <h4 className="font-bold text-blue-400 text-lg">
+                  Scalable Approach
+                </h4>
+                <p className="text-gray-300">
+                  Systematic patterns that work across problems
+                </p>
               </div>
             </div>
-            
+
             <div className="flex items-start gap-4 bg-gray-800 p-4 rounded-lg">
               <div className="text-3xl">🎓</div>
               <div>
-                <h4 className="font-bold text-blue-400 text-lg">Learn While Building</h4>
+                <h4 className="font-bold text-blue-400 text-lg">
+                  Learn While Building
+                </h4>
                 <p className="text-gray-300">AI explains as it generates</p>
               </div>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "The Evolution Timeline",
-      subtitle: "How we got here",
+      title: 'The Evolution Timeline',
+      subtitle: 'How we got here',
       icon: Code,
       content: (
         <div className="space-y-4">
           <div className="relative">
             <div className="absolute left-8 top-0 bottom-0 w-1 bg-blue-500"></div>
-            
+
             <div className="relative pl-20 pb-8">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-gray-600 border-4 border-gray-900"></div>
               <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="font-bold text-lg text-gray-400">Phase 1: StackOverflow Era</h4>
+                <h4 className="font-bold text-lg text-gray-400">
+                  Phase 1: StackOverflow Era
+                </h4>
                 <p className="text-gray-400">Search → Copy → Paste → Hope</p>
               </div>
             </div>
@@ -199,58 +249,85 @@ const Presentation = () => {
             <div className="relative pl-20 pb-8">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-yellow-600 border-4 border-gray-900"></div>
               <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="font-bold text-lg text-yellow-400">Phase 2: ChatGPT Copy-Paste</h4>
-                <p className="text-gray-300">"Write me a function that..." → Copy → Still hoping</p>
-                <p className="text-sm text-gray-400 mt-2">Better than Google, but still manual</p>
+                <h4 className="font-bold text-lg text-yellow-400">
+                  Phase 2: ChatGPT Copy-Paste
+                </h4>
+                <p className="text-gray-300">
+                  "Write me a function that..." → Copy → Still hoping
+                </p>
+                <p className="text-sm text-gray-400 mt-2">
+                  Better than Google, but still manual
+                </p>
               </div>
             </div>
 
             <div className="relative pl-20 pb-8">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-blue-600 border-4 border-gray-900"></div>
               <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="font-bold text-lg text-blue-400">Phase 3: Prompt Engineering</h4>
-                <p className="text-gray-300">Learning to communicate effectively with AI</p>
-                <p className="text-sm text-gray-400 mt-2">Context, examples, constraints matter</p>
+                <h4 className="font-bold text-lg text-blue-400">
+                  Phase 3: Prompt Engineering
+                </h4>
+                <p className="text-gray-300">
+                  Learning to communicate effectively with AI
+                </p>
+                <p className="text-sm text-gray-400 mt-2">
+                  Context, examples, constraints matter
+                </p>
               </div>
             </div>
 
             <div className="relative pl-20 pb-8">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-purple-600 border-4 border-gray-900"></div>
               <div className="bg-gray-800 p-4 rounded-lg">
-                <h4 className="font-bold text-lg text-purple-400">Phase 4: AI-Powered IDEs</h4>
-                <p className="text-gray-300">Cursor, GitHub Copilot, Continue.dev</p>
-                <p className="text-sm text-gray-400 mt-2">AI integrated into your workflow</p>
+                <h4 className="font-bold text-lg text-purple-400">
+                  Phase 4: AI-Powered IDEs
+                </h4>
+                <p className="text-gray-300">
+                  Cursor, GitHub Copilot, Continue.dev
+                </p>
+                <p className="text-sm text-gray-400 mt-2">
+                  AI integrated into your workflow
+                </p>
               </div>
             </div>
 
             <div className="relative pl-20">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-green-600 border-4 border-gray-900 animate-pulse"></div>
               <div className="bg-gradient-to-r from-green-900/50 to-blue-900/50 p-4 rounded-lg border border-green-500">
-                <h4 className="font-bold text-lg text-green-400">Phase 5: MCPs & Context-Aware AI</h4>
-                <p className="text-gray-200">AI understands your entire codebase and tools</p>
+                <h4 className="font-bold text-lg text-green-400">
+                  Phase 5: MCPs & Context-Aware AI
+                </h4>
+                <p className="text-gray-200">
+                  AI understands your entire codebase and tools
+                </p>
                 <p className="text-sm text-green-400 mt-2">← We are here</p>
               </div>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "What are MCPs?",
-      subtitle: "Model Context Protocol",
+      title: 'What are MCPs?',
+      subtitle: 'Model Context Protocol',
       icon: Boxes,
       content: (
         <div className="space-y-6">
           <div className="bg-gradient-to-r from-purple-900/50 to-pink-900/50 p-6 rounded-lg border border-purple-500">
-            <h3 className="text-2xl font-bold text-purple-300 mb-3">Model Context Protocol</h3>
+            <h3 className="text-2xl font-bold text-purple-300 mb-3">
+              Model Context Protocol
+            </h3>
             <p className="text-lg text-gray-200">
-              A standardized way for AI to interact with your tools, databases, APIs, and codebases
+              A standardized way for AI to interact with your tools, databases,
+              APIs, and codebases
             </p>
           </div>
 
           <div className="grid grid-cols-2 gap-4">
             <div className="bg-gray-800 p-5 rounded-lg">
-              <h4 className="font-bold text-blue-400 mb-3">🔌 Connect Everything</h4>
+              <h4 className="font-bold text-blue-400 mb-3">
+                🔌 Connect Everything
+              </h4>
               <ul className="text-sm space-y-2 text-gray-300">
                 <li>• Your Git repositories</li>
                 <li>• Database connections</li>
@@ -272,7 +349,9 @@ const Presentation = () => {
             </div>
 
             <div className="bg-gray-800 p-5 rounded-lg">
-              <h4 className="font-bold text-yellow-400 mb-3">⚡ Take Actions</h4>
+              <h4 className="font-bold text-yellow-400 mb-3">
+                ⚡ Take Actions
+              </h4>
               <ul className="text-sm space-y-2 text-gray-300">
                 <li>• Create/modify files</li>
                 <li>• Run commands</li>
@@ -283,7 +362,9 @@ const Presentation = () => {
             </div>
 
             <div className="bg-gray-800 p-5 rounded-lg">
-              <h4 className="font-bold text-pink-400 mb-3">🔄 Continuous Flow</h4>
+              <h4 className="font-bold text-pink-400 mb-3">
+                🔄 Continuous Flow
+              </h4>
               <ul className="text-sm space-y-2 text-gray-300">
                 <li>• No context switching</li>
                 <li>• Real-time feedback</li>
@@ -294,29 +375,44 @@ const Presentation = () => {
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Setting Up Cursor",
-      subtitle: "Your AI-Powered IDE",
+      title: 'Setting Up Cursor',
+      subtitle: 'Your AI-Powered IDE',
       icon: Settings,
       content: (
         <div className="space-y-4">
           <div className="bg-blue-900/30 border border-blue-500 p-4 rounded-lg">
-            <h3 className="text-xl font-bold text-blue-400 mb-2">Why Cursor?</h3>
-            <p className="text-gray-300">Built from the ground up for AI-powered development. Fork of VS Code with native AI integration.</p>
+            <h3 className="text-xl font-bold text-blue-400 mb-2">
+              Why Cursor?
+            </h3>
+            <p className="text-gray-300">
+              Built from the ground up for AI-powered development. Fork of VS
+              Code with native AI integration.
+            </p>
           </div>
 
           <div className="space-y-3">
             <div className="bg-gray-800 p-4 rounded-lg">
-              <h4 className="font-bold text-green-400 mb-2">1. Download & Install</h4>
-              <p className="text-sm text-gray-300 mb-2">Visit cursor.sh and download</p>
-              <code className="text-xs bg-gray-900 px-2 py-1 rounded text-green-400">cursor.sh</code>
+              <h4 className="font-bold text-green-400 mb-2">
+                1. Download & Install
+              </h4>
+              <p className="text-sm text-gray-300 mb-2">
+                Visit cursor.sh and download
+              </p>
+              <code className="text-xs bg-gray-900 px-2 py-1 rounded text-green-400">
+                cursor.sh
+              </code>
             </div>
 
             <div className="bg-gray-800 p-4 rounded-lg">
-              <h4 className="font-bold text-green-400 mb-2">2. API Key Setup</h4>
-              <p className="text-sm text-gray-300 mb-2">Settings → Cursor Settings → Models</p>
+              <h4 className="font-bold text-green-400 mb-2">
+                2. API Key Setup
+              </h4>
+              <p className="text-sm text-gray-300 mb-2">
+                Settings → Cursor Settings → Models
+              </p>
               <ul className="text-xs space-y-1 text-gray-400 mt-2">
                 <li>• OpenAI API key (recommended: gpt-4)</li>
                 <li>• Or use Anthropic Claude</li>
@@ -328,11 +424,15 @@ const Presentation = () => {
               <h4 className="font-bold text-green-400 mb-2">3. Key Features</h4>
               <div className="grid grid-cols-2 gap-2 text-xs mt-2">
                 <div className="bg-gray-900 p-2 rounded">
-                  <span className="text-purple-400 font-bold">Cmd/Ctrl + K:</span>
+                  <span className="text-purple-400 font-bold">
+                    Cmd/Ctrl + K:
+                  </span>
                   <p className="text-gray-400">Edit code with AI</p>
                 </div>
                 <div className="bg-gray-900 p-2 rounded">
-                  <span className="text-purple-400 font-bold">Cmd/Ctrl + L:</span>
+                  <span className="text-purple-400 font-bold">
+                    Cmd/Ctrl + L:
+                  </span>
                   <p className="text-gray-400">Chat with AI</p>
                 </div>
                 <div className="bg-gray-900 p-2 rounded">
@@ -348,46 +448,62 @@ const Presentation = () => {
 
             <div className="bg-gray-800 p-4 rounded-lg">
               <h4 className="font-bold text-green-400 mb-2">4. Enable MCPs</h4>
-              <p className="text-sm text-gray-300 mb-2">Cursor Rules (.cursorrules file in root)</p>
+              <p className="text-sm text-gray-300 mb-2">
+                Cursor Rules (.cursorrules file in root)
+              </p>
               <code className="text-xs bg-gray-900 px-2 py-1 rounded block text-gray-400 mt-2">
                 Add project-specific AI instructions
               </code>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "VS Code + AI Extensions",
-      subtitle: "Alternative setup",
+      title: 'VS Code + AI Extensions',
+      subtitle: 'Alternative setup',
       icon: Settings,
       content: (
         <div className="space-y-4">
           <div className="bg-gray-800 p-4 rounded-lg">
-            <h3 className="text-xl font-bold text-blue-400 mb-3">Essential Extensions</h3>
-            
+            <h3 className="text-xl font-bold text-blue-400 mb-3">
+              Essential Extensions
+            </h3>
+
             <div className="space-y-3">
               <div className="bg-gray-900 p-3 rounded">
                 <h4 className="font-bold text-green-400">GitHub Copilot</h4>
-                <p className="text-sm text-gray-300 mt-1">$10/month - Industry standard</p>
-                <p className="text-xs text-gray-500 mt-1">Inline suggestions + Copilot Chat</p>
+                <p className="text-sm text-gray-300 mt-1">
+                  $10/month - Industry standard
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Inline suggestions + Copilot Chat
+                </p>
               </div>
 
               <div className="bg-gray-900 p-3 rounded">
                 <h4 className="font-bold text-purple-400">Continue.dev</h4>
                 <p className="text-sm text-gray-300 mt-1">Free & Open Source</p>
-                <p className="text-xs text-gray-500 mt-1">Similar to Cursor, bring your own LLM</p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Similar to Cursor, bring your own LLM
+                </p>
               </div>
 
               <div className="bg-gray-900 p-3 rounded">
                 <h4 className="font-bold text-blue-400">Codeium</h4>
-                <p className="text-sm text-gray-300 mt-1">Free alternative to Copilot</p>
-                <p className="text-xs text-gray-500 mt-1">Decent for autocomplete</p>
+                <p className="text-sm text-gray-300 mt-1">
+                  Free alternative to Copilot
+                </p>
+                <p className="text-xs text-gray-500 mt-1">
+                  Decent for autocomplete
+                </p>
               </div>
 
               <div className="bg-gray-900 p-3 rounded">
                 <h4 className="font-bold text-yellow-400">Tabnine</h4>
-                <p className="text-sm text-gray-300 mt-1">Privacy-focused option</p>
+                <p className="text-sm text-gray-300 mt-1">
+                  Privacy-focused option
+                </p>
                 <p className="text-xs text-gray-500 mt-1">Can run locally</p>
               </div>
             </div>
@@ -403,11 +519,11 @@ const Presentation = () => {
             </ol>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Prompt Engineering Basics",
-      subtitle: "Communicating with AI effectively",
+      title: 'Prompt Engineering Basics',
+      subtitle: 'Communicating with AI effectively',
       icon: Brain,
       content: (
         <div className="space-y-4">
@@ -418,33 +534,45 @@ const Presentation = () => {
                 make it work
               </code>
             </div>
-            
+
             <div className="bg-green-900/30 border border-green-500 p-4 rounded-lg">
               <h4 className="font-bold text-green-400 mb-3">✓ Good Prompt</h4>
               <code className="text-xs bg-gray-900 p-2 rounded block text-gray-300">
-                Refactor this function to handle edge cases: null inputs, empty arrays, and negative numbers. Add error handling and JSDoc comments.
+                Refactor this function to handle edge cases: null inputs, empty
+                arrays, and negative numbers. Add error handling and JSDoc
+                comments.
               </code>
             </div>
           </div>
 
           <div className="bg-gray-800 p-4 rounded-lg">
-            <h4 className="font-bold text-blue-400 mb-3">The SPEC Framework:</h4>
+            <h4 className="font-bold text-blue-400 mb-3">
+              The SPEC Framework:
+            </h4>
             <div className="space-y-2 text-sm">
               <div className="flex gap-3">
                 <span className="text-purple-400 font-bold">S</span>
-                <span className="text-gray-300"><strong>Specific:</strong> What exactly do you want?</span>
+                <span className="text-gray-300">
+                  <strong>Specific:</strong> What exactly do you want?
+                </span>
               </div>
               <div className="flex gap-3">
                 <span className="text-purple-400 font-bold">P</span>
-                <span className="text-gray-300"><strong>Purpose:</strong> Why does it need to do this?</span>
+                <span className="text-gray-300">
+                  <strong>Purpose:</strong> Why does it need to do this?
+                </span>
               </div>
               <div className="flex gap-3">
                 <span className="text-purple-400 font-bold">E</span>
-                <span className="text-gray-300"><strong>Examples:</strong> Show input/output examples</span>
+                <span className="text-gray-300">
+                  <strong>Examples:</strong> Show input/output examples
+                </span>
               </div>
               <div className="flex gap-3">
                 <span className="text-purple-400 font-bold">C</span>
-                <span className="text-gray-300"><strong>Constraints:</strong> Tech stack, performance, style</span>
+                <span className="text-gray-300">
+                  <strong>Constraints:</strong> Tech stack, performance, style
+                </span>
               </div>
             </div>
           </div>
@@ -460,55 +588,80 @@ const Presentation = () => {
             </ul>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Advanced: MCP Configuration",
-      subtitle: "Connecting your tools",
+      title: 'Advanced: MCP Configuration',
+      subtitle: 'Connecting your tools',
       icon: Boxes,
       content: (
         <div className="space-y-4">
           <div className="bg-gray-800 p-4 rounded-lg">
-            <h4 className="font-bold text-purple-400 mb-3">Popular MCP Servers:</h4>
-            
+            <h4 className="font-bold text-purple-400 mb-3">
+              Popular MCP Servers:
+            </h4>
+
             <div className="space-y-3 text-sm">
               <div className="bg-gray-900 p-3 rounded">
-                <h5 className="text-green-400 font-bold">Filesystem MCP</h5>
-                <p className="text-gray-400 text-xs mt-1">Read/write project files</p>
-              </div>
-              
-              <div className="bg-gray-900 p-3 rounded">
                 <h5 className="text-blue-400 font-bold">Git MCP</h5>
-                <p className="text-gray-400 text-xs mt-1">Commit, branch, diff operations</p>
+                <p className="text-gray-400 text-xs mt-1">
+                  Commit, branch, diff operations
+                </p>
               </div>
-              
+
               <div className="bg-gray-900 p-3 rounded">
                 <h5 className="text-yellow-400 font-bold">PostgreSQL MCP</h5>
-                <p className="text-gray-400 text-xs mt-1">Query and modify databases</p>
-              </div>
-              
-              <div className="bg-gray-900 p-3 rounded">
-                <h5 className="text-pink-400 font-bold">Brave Search MCP</h5>
-                <p className="text-gray-400 text-xs mt-1">Web search capabilities</p>
+                <p className="text-gray-400 text-xs mt-1">
+                  Query and modify databases
+                </p>
               </div>
 
               <div className="bg-gray-900 p-3 rounded">
                 <h5 className="text-orange-400 font-bold">GitHub MCP</h5>
-                <p className="text-gray-400 text-xs mt-1">Issues, PRs, repo management</p>
+                <p className="text-gray-400 text-xs mt-1">
+                  Issues, PRs, repo management
+                </p>
+              </div>
+
+              <div className="bg-gray-900 p-3 rounded">
+                <h5 className="text-cyan-400 font-bold">Figma MCP</h5>
+                <p className="text-gray-400 text-xs mt-1">
+                  Design context, screenshots, and code generation from Figma
+                </p>
+              </div>
+
+              <div className="bg-gray-900 p-3 rounded">
+                <h5 className="text-indigo-400 font-bold">shadcn MCP</h5>
+                <p className="text-gray-400 text-xs mt-1">
+                  Browse and add shadcn/ui components to your project
+                </p>
+              </div>
+
+              <div className="bg-gray-900 p-3 rounded">
+                <h5 className="text-teal-400 font-bold">JIRA MCP</h5>
+                <p className="text-gray-400 text-xs mt-1">
+                  Create issues, manage tickets, and track project progress
+                </p>
               </div>
             </div>
           </div>
 
           <div className="bg-blue-900/30 border border-blue-500 p-4 rounded-lg">
             <h4 className="font-bold text-blue-400 mb-2">Setup Location:</h4>
-            <p className="text-xs text-gray-300 mb-2">Cursor: Settings → Features → MCP</p>
-            <p className="text-xs text-gray-300">VS Code + Continue: .continue/config.json</p>
+            <p className="text-xs text-gray-300 mb-2">
+              Cursor: Settings → Features → MCP
+            </p>
+            <p className="text-xs text-gray-300">
+              VS Code + Continue: .continue/config.json
+            </p>
           </div>
 
           <div className="bg-gray-800 p-3 rounded-lg">
-            <h4 className="font-bold text-green-400 mb-2 text-sm">Example config.json:</h4>
+            <h4 className="font-bold text-green-400 mb-2 text-sm">
+              Example config.json:
+            </h4>
             <pre className="text-xs bg-gray-900 p-2 rounded overflow-x-auto text-gray-300">
-{`{
+              {`{
   "mcpServers": {
     "filesystem": {
       "command": "npx",
@@ -520,50 +673,94 @@ const Presentation = () => {
             </pre>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Workflow Examples",
-      subtitle: "AI-powered development in action",
+      title: 'Workflow Examples',
+      subtitle: 'AI-powered development in action',
       icon: Zap,
       content: (
         <div className="space-y-4">
           <div className="bg-gradient-to-r from-blue-900/30 to-purple-900/30 p-4 rounded-lg border border-blue-500">
-            <h4 className="font-bold text-blue-400 mb-2">Example 1: Building a Feature</h4>
+            <h4 className="font-bold text-blue-400 mb-2">
+              Example 1: Building a Feature
+            </h4>
             <div className="text-sm space-y-2 text-gray-300">
-              <p><span className="text-green-400">1.</span> "Create a user authentication system with JWT"</p>
-              <p><span className="text-green-400">2.</span> AI generates models, routes, middleware</p>
-              <p><span className="text-green-400">3.</span> "Add password reset functionality"</p>
-              <p><span className="text-green-400">4.</span> "Write tests for the auth flow"</p>
-              <p><span className="text-green-400">5.</span> "Add rate limiting to prevent brute force"</p>
+              <p>
+                <span className="text-green-400">1.</span> "Create a user
+                authentication system with JWT"
+              </p>
+              <p>
+                <span className="text-green-400">2.</span> AI generates models,
+                routes, middleware
+              </p>
+              <p>
+                <span className="text-green-400">3.</span> "Add password reset
+                functionality"
+              </p>
+              <p>
+                <span className="text-green-400">4.</span> "Write tests for the
+                auth flow"
+              </p>
+              <p>
+                <span className="text-green-400">5.</span> "Add rate limiting to
+                prevent brute force"
+              </p>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-purple-900/30 to-pink-900/30 p-4 rounded-lg border border-purple-500">
-            <h4 className="font-bold text-purple-400 mb-2">Example 2: Debugging</h4>
+            <h4 className="font-bold text-purple-400 mb-2">
+              Example 2: Debugging
+            </h4>
             <div className="text-sm space-y-2 text-gray-300">
-              <p><span className="text-yellow-400">1.</span> Select buggy code</p>
-              <p><span className="text-yellow-400">2.</span> Cmd+K: "Fix this bug and explain what was wrong"</p>
-              <p><span className="text-yellow-400">3.</span> AI identifies issue, provides fix + explanation</p>
-              <p><span className="text-yellow-400">4.</span> Learn and move forward</p>
+              <p>
+                <span className="text-yellow-400">1.</span> Select buggy code
+              </p>
+              <p>
+                <span className="text-yellow-400">2.</span> Cmd+K: "Fix this bug
+                and explain what was wrong"
+              </p>
+              <p>
+                <span className="text-yellow-400">3.</span> AI identifies issue,
+                provides fix + explanation
+              </p>
+              <p>
+                <span className="text-yellow-400">4.</span> Learn and move
+                forward
+              </p>
             </div>
           </div>
 
           <div className="bg-gradient-to-r from-green-900/30 to-blue-900/30 p-4 rounded-lg border border-green-500">
-            <h4 className="font-bold text-green-400 mb-2">Example 3: Refactoring</h4>
+            <h4 className="font-bold text-green-400 mb-2">
+              Example 3: Refactoring
+            </h4>
             <div className="text-sm space-y-2 text-gray-300">
-              <p><span className="text-blue-400">1.</span> "Refactor this to use TypeScript generics"</p>
-              <p><span className="text-blue-400">2.</span> "Make it more functional and less imperative"</p>
-              <p><span className="text-blue-400">3.</span> "Extract repeated logic into a helper function"</p>
-              <p><span className="text-blue-400">4.</span> Code improves while you learn patterns</p>
+              <p>
+                <span className="text-blue-400">1.</span> "Refactor this to use
+                TypeScript generics"
+              </p>
+              <p>
+                <span className="text-blue-400">2.</span> "Make it more
+                functional and less imperative"
+              </p>
+              <p>
+                <span className="text-blue-400">3.</span> "Extract repeated
+                logic into a helper function"
+              </p>
+              <p>
+                <span className="text-blue-400">4.</span> Code improves while
+                you learn patterns
+              </p>
             </div>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Best Practices",
-      subtitle: "How to work effectively with AI",
+      title: 'Best Practices',
+      subtitle: 'How to work effectively with AI',
       icon: Brain,
       content: (
         <div className="space-y-4">
@@ -601,7 +798,9 @@ const Presentation = () => {
           </div>
 
           <div className="bg-purple-900/30 border border-purple-500 p-4 rounded-lg">
-            <h4 className="font-bold text-purple-400 mb-3">Security Checklist:</h4>
+            <h4 className="font-bold text-purple-400 mb-3">
+              Security Checklist:
+            </h4>
             <ul className="text-sm space-y-2 text-gray-300">
               <li>✓ Always validate AI-generated security code</li>
               <li>✓ Never commit API keys or secrets</li>
@@ -611,11 +810,11 @@ const Presentation = () => {
             </ul>
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "The Future is Here",
-      subtitle: "What this means for you",
+      title: 'The Future is Here',
+      subtitle: 'What this means for you',
       icon: Zap,
       content: (
         <div className="space-y-6">
@@ -638,36 +837,45 @@ const Presentation = () => {
             <div className="bg-gray-800 p-4 rounded-lg text-center">
               <div className="text-4xl mb-2">🎯</div>
               <h4 className="font-bold text-green-400 mb-2">Better Quality</h4>
-              <p className="text-sm text-gray-300">Consistent, tested, documented</p>
+              <p className="text-sm text-gray-300">
+                Consistent, tested, documented
+              </p>
             </div>
 
             <div className="bg-gray-800 p-4 rounded-lg text-center">
               <div className="text-4xl mb-2">📚</div>
-              <h4 className="font-bold text-purple-400 mb-2">Always Learning</h4>
+              <h4 className="font-bold text-purple-400 mb-2">
+                Always Learning
+              </h4>
               <p className="text-sm text-gray-300">Understand as you build</p>
             </div>
           </div>
 
           <div className="bg-blue-900/30 border border-blue-500 p-6 rounded-lg">
-            <h4 className="font-bold text-blue-400 mb-3 text-xl">What You Should Do Today:</h4>
+            <h4 className="font-bold text-blue-400 mb-3 text-xl">
+              What You Should Do Today:
+            </h4>
             <ol className="space-y-2 text-gray-300">
               <li>1. Install Cursor or set up Continue.dev in VS Code</li>
               <li>2. Configure MCPs for your most-used tools</li>
-              <li>3. Start with a small task and practice prompt engineering</li>
+              <li>
+                3. Start with a small task and practice prompt engineering
+              </li>
               <li>4. Review and learn from the generated code</li>
               <li>5. Gradually tackle bigger challenges</li>
             </ol>
           </div>
 
           <div className="text-center text-2xl text-gray-300 mt-8 italic">
-            "The future belongs to engineers who can think systematically and communicate effectively with AI"
+            "The future belongs to engineers who can think systematically and
+            communicate effectively with AI"
           </div>
         </div>
-      )
+      ),
     },
     {
-      title: "Resources & Next Steps",
-      subtitle: "Continue your journey",
+      title: 'Resources & Next Steps',
+      subtitle: 'Continue your journey',
       icon: Brain,
       content: (
         <div className="space-y-4">
@@ -687,14 +895,18 @@ const Presentation = () => {
                 <p className="text-gray-400 text-xs">GitHub's AI assistant</p>
               </div>
               <div className="bg-gray-900 p-3 rounded">
-                <p className="text-yellow-400 font-bold">modelcontextprotocol.io</p>
+                <p className="text-yellow-400 font-bold">
+                  modelcontextprotocol.io
+                </p>
                 <p className="text-gray-400 text-xs">MCP documentation</p>
               </div>
             </div>
           </div>
 
           <div className="bg-gray-800 p-4 rounded-lg">
-            <h4 className="font-bold text-green-400 mb-3">Learning Resources:</h4>
+            <h4 className="font-bold text-green-400 mb-3">
+              Learning Resources:
+            </h4>
             <ul className="text-sm space-y-2 text-gray-300">
               <li>• Anthropic Prompt Engineering Guide</li>
               <li>• OpenAI Cookbook</li>
@@ -708,15 +920,16 @@ const Presentation = () => {
               Start Building Today
             </h3>
             <p className="text-center text-gray-200">
-              The tools are ready. The approach is proven. The future is systematic.
+              The tools are ready. The approach is proven. The future is
+              systematic.
             </p>
             <p className="text-center text-blue-400 mt-4 text-lg font-semibold">
               Welcome to modern software engineering.
             </p>
           </div>
         </div>
-      )
-    }
+      ),
+    },
   ];
 
   const nextSlide = () => {
@@ -809,4 +1022,3 @@ const Presentation = () => {
 };
 
 export default Presentation;
-
