@@ -291,11 +291,27 @@ const Presentation = () => {
               </div>
             </div>
 
+            <div className="relative pl-20 pb-8">
+              <div className="absolute left-5 w-6 h-6 rounded-full bg-pink-600 border-4 border-gray-900"></div>
+              <div className="bg-gray-800 p-4 rounded-lg">
+                <h4 className="font-bold text-lg text-pink-400">
+                  Phase 5: AI Application Builders
+                </h4>
+                <p className="text-gray-300">
+                  Bolt, Lovable, v0, Builder.io - Generate full apps from
+                  prompts
+                </p>
+                <p className="text-sm text-gray-400 mt-2">
+                  AI creates entire applications, not just code snippets
+                </p>
+              </div>
+            </div>
+
             <div className="relative pl-20">
               <div className="absolute left-5 w-6 h-6 rounded-full bg-green-600 border-4 border-gray-900 animate-pulse"></div>
               <div className="bg-gradient-to-r from-green-900/50 to-blue-900/50 p-4 rounded-lg border border-green-500">
                 <h4 className="font-bold text-lg text-green-400">
-                  Phase 5: MCPs & Context-Aware AI
+                  Phase 6: MCPs & Context-Aware AI
                 </h4>
                 <p className="text-gray-200">
                   AI understands your entire codebase and tools
@@ -925,6 +941,56 @@ const Presentation = () => {
             </p>
             <p className="text-center text-blue-400 mt-4 text-lg font-semibold">
               Welcome to modern software engineering.
+            </p>
+          </div>
+        </div>
+      ),
+    },
+    {
+      title: 'Questions & Answers',
+      subtitle: "Let's discuss",
+      icon: Brain,
+      content: (
+        <div className="space-y-6">
+          <div className="bg-gradient-to-r from-blue-900/50 to-purple-900/50 p-6 rounded-lg border border-blue-500">
+            <h3 className="text-2xl font-bold text-center mb-4 text-blue-300">
+              Q&A Session
+            </h3>
+            <p className="text-center text-gray-200 text-lg">
+              Have questions about AI-powered development?
+            </p>
+          </div>
+
+          <div className="grid grid-cols-1 gap-4">
+            <div className="bg-gray-800 p-5 rounded-lg border-l-4 border-blue-500">
+              <h4 className="font-bold text-blue-400 mb-2 text-lg">
+                💬 Common Questions:
+              </h4>
+              <ul className="text-sm space-y-2 text-gray-300 mt-3">
+                <li>• How do I get started with Cursor or AI coding tools?</li>
+                <li>• What's the best way to learn prompt engineering?</li>
+                <li>• How do MCPs work and which ones should I use?</li>
+                <li>• Can AI really replace developers?</li>
+                <li>
+                  • What are the security concerns with AI-generated code?
+                </li>
+              </ul>
+            </div>
+
+            <div className="bg-gray-800 p-5 rounded-lg border-l-4 border-green-500">
+              <h4 className="font-bold text-green-400 mb-2 text-lg">
+                🎯 Let's Talk:
+              </h4>
+              <p className="text-gray-300">
+                Share your experiences, ask questions, and discuss how AI is
+                changing your development workflow.
+              </p>
+            </div>
+          </div>
+
+          <div className="text-center mt-6">
+            <p className="text-xl text-gray-300 italic">
+              "The best way to learn is by doing and sharing"
             </p>
           </div>
         </div>
